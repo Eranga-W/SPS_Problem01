@@ -1,33 +1,28 @@
 package org.example;
-
+import java.util.*;
 public class Main {
     public static void main(String[] args) {
-        int[] numList = {10, 20, 30, 40};
-        int forSum = 0;
-        int whileSum = 0;
-        int recSum = 0;
+        int[] numList = {1,2,3};
+        char[] chList = {'a','b','c'};
 
-        //for-loop
-        for (int i = 0; i < numList.length; i++) {
-            forSum += numList[i];
+        List<Object> list = new ArrayList<>();
+
+        int i = 0, j = 0;
+        while (i < numList.length || j < chList.length) {
+            if (i < numList.length) {
+                list.add(numList[i]);
+                i++;
+            }
+            if (j < chList.length) {
+                list.add(chList[j]);
+                j++;
+            }
         }
 
-        //while-loop
-        int j=0;
-        while (j < numList.length) {
-            whileSum += numList[j];
-            j++;
-        }
+        System.out.println("Combined List: " + list);
 
-        System.out.println("Sum of for-loop = " + forSum);
-        System.out.println("Sum of while-loop = " + whileSum);
-        System.out.println("Sum of recursion = " + getSum(numList,numList.length));
-    }
-    //recursion
-    public static int getSum(int[] arr, int n) {
-        if (n == 0) {
-            return 0;
-        }
-        return arr[n - 1] + getSum(arr, n - 1);
+
+
+
     }
 }
