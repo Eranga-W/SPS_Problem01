@@ -1,16 +1,20 @@
 package org.example;
 import java.util.*;
+import java.lang.*;
 public class Main {
     public static void main(String[] args) {
-        List<Long> fibList = new ArrayList<>();
-        fibList.add(0L);
-        fibList.add(1L);
+        int[] nums = {50, 2, 1, 9};
 
-        for (int i = 2; i < 100; i++) {
-            fibList.add(fibList.get(i - 1) + fibList.get(i - 2));
+        String[] strNums = new String[nums.length];
+        for (int i = 0; i < nums.length; i++) {
+            strNums[i] = String.valueOf(nums[i]);
         }
 
-        System.out.println("Fibonacci Numbers: " + fibList);
+        Arrays.sort(strNums, (a, b) -> (b + a).compareTo(a + b));
+
+        String str = String.join("", strNums);
+
+        System.out.println("Formed Number is " + str);
 
     }
 }
