@@ -1,3 +1,6 @@
 
-ž
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Çµí‘8Áð¢¸Û2
+n
+java:S1481"+Remove this unused "recSum" local variable.(Ñ’“à8í„ô¸Û2J$37c8ece8-9c0b-4b4f-9adc-1818dd842e26
+m	java:S106"+Replace this use of System.out by a logger.(ŽÄêß8ñ„ô¸Û2J$c6f23939-09dc-452a-88ae-5edbd839e6bf
+m	java:S106"+Replace this use of System.out by a logger.(¦ˆá»8ô„ô¸Û2J$1d4f3193-38a4-4301-963f-525b7504cced
+r	java:S106"+Replace this use of System.out by a logger.(ˆ§¨ªúÿÿÿÿ8ö„ô¸Û2J$04d46a33-8120-45d5-ad73-b34daf84ad25
