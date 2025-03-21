@@ -2,27 +2,15 @@ package org.example;
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
-        int[] numList = {1,2,3};
-        char[] chList = {'a','b','c'};
+        List<Long> fibList = new ArrayList<>();
+        fibList.add(0L);
+        fibList.add(1L);
 
-        List<Object> list = new ArrayList<>();
-
-        int i = 0, j = 0;
-        while (i < numList.length || j < chList.length) {
-            if (i < numList.length) {
-                list.add(numList[i]);
-                i++;
-            }
-            if (j < chList.length) {
-                list.add(chList[j]);
-                j++;
-            }
+        for (int i = 2; i < 100; i++) {
+            fibList.add(fibList.get(i - 1) + fibList.get(i - 2));
         }
 
-        System.out.println("Combined List: " + list);
-
-
-
+        System.out.println("Fibonacci Numbers: " + fibList);
 
     }
 }
